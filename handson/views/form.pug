@@ -1,0 +1,18 @@
+html
+    head
+        title= 'Form'
+    body
+        form(action= '/submit' method ='post')
+            h3 FirstName:
+
+            input(type='text' name = 'FirstName' placeholder= "Enter the First Name")
+            h3 SecondName:
+
+            input(type='text' name = 'SecondName' placeholder= "Enter the Second Name")
+
+            h3 Date:
+
+            input(type='date' name= 'DateofBirth')
+            br
+            br
+            input(type= 'submit' name='Submit' value = 'Submit')

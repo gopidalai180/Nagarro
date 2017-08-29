@@ -1,0 +1,19 @@
+{
+  "name": "handson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "q1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "morgan": "^1.8.2",
+    "pug": "^2.0.0-rc.3",
+    "wait.for": "^0.6.6"
+  }
+}
