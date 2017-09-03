@@ -1,7 +1,8 @@
 var StatusENUMS = {
+    DELETED:'DELETED',
     ACTIVE: 'ACTIVE',
-    COMPLETE:'COMPLETE',
-    DELETED:'DELETED'
+    COMPLETE:'COMPLETE'
+
 }
 
 var todos = {

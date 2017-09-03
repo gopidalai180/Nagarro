@@ -18,7 +18,7 @@ app.delete('/api/todos/:id',function (req,res) {
     }
     else{
         todo.status  = todo_db.StatusENUM.DELETED;
-        res.json(todo_db);
+        res.json(todo_db.todos);
     }
 });
 app.post('/api/todos',function (req,res) {
