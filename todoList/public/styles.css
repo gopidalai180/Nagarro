@@ -25,11 +25,13 @@ div.todoStatusDELETED{
 
 #todo_list_div{
     border-bottom: solid;
+    margin-left: 40px;
     /*border-top: solid;*/
     padding: 10px;
 }
 #complete_div{
     border-bottom: solid;
+    margin-left: 40px;
     /*border-top: solid;*/
     padding: 10px;
 }
@@ -79,7 +81,8 @@ button{
 
 }
 #complete_button{
-
+    position: absolute;
+    left:20px;
     height: 20px;
     width: 20px;
 }

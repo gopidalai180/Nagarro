@@ -25,11 +25,12 @@ function addTodoElement(id,todos_data_json) {
                 if(todos[key].status=="ACTIVE") {
                     var todo_element = createTodoElement(key, todos[key]);
                     parent.appendChild(todo_element);
-                    //addTodoElement_COMPLETE("complete_div",todos_data_json)
+                  //  addTodoElement_COMPLETE("complete_div",todos_data_json)
                 }
 
             }
         );
+
         //getTodosAJAX();
         //parent.appendChild(createTodoElement());
     }
@@ -50,7 +51,10 @@ function addTodoElement_COMPLETE(id,todos_data_json) {
                     addTodoElement(ID,todos_data_json);
 
                 }
+
+
             }
+
         );
         //parent.appendChild(createTodoElement());
     }
@@ -166,6 +170,7 @@ function activeTodoAJAX(id) {
         if (xhr.readyState == RESPONSE_DONE){
             if (xhr.status == STATUS_OK){
                 addTodoElement(ID,xhr.responseText);
+                addTodoElement_COMPLETE("complete_div",xhr.responseText);
             }
             else {
                 console.log(xhr.responseText);
